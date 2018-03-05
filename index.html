@@ -10,6 +10,8 @@
     <!-- We need to specify the character encoding, since we use chinese characters -->
     <meta charset="UTF-8">
 
+   
+   
     <!-- #2 #css #elements -->
     <style>
         /* #2 #colorful #palette is:
@@ -88,7 +90,7 @@
             color: black;
         }
     </style>
-
+<link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -99,7 +101,7 @@
 
     <!-- #1 #channels #topics -->
     <ul>
-        <li>#Yummy<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Star!" style="height: auto;"></li>
+        <li class="selected">#Yummy<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Star!" style="height: auto;"></li>
         <li>#Yummy2<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="no star!" style="height: auto;"></li>
         <li>#Yummy3<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star!" style="height: auto;"></li>
         <li>#Yummy4<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star!" style="height: auto;"></li>
@@ -107,10 +109,10 @@
     </ul>
 
     <!-- #1 #channels #buttons -->
-    <div style="background-color: white">
-        <button><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="Lightbulb!" style="height: auto;">new</button>
-        <button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire!" style="height: auto;">trending</button>
-        <button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Star!" style="height: auto;">favorites</button>
+    <div id="tab-bar">
+        <button class="selected"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="Lightbulb!" style="height: auto;">new</button>
+        <button class="not-selected"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire!" style="height: auto;">trending</button>
+        <button class="not-selected"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Star!" style="height: auto;">favorites</button>
     </div>
 
     <!-- chat area -->
@@ -125,21 +127,21 @@
     </h1>
 
     <!-- #1 #chat #metadata contains location, weekday, day, and time -->
-    <div style="width: 80%">
+    <div class="message">
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
             <a href="https://map.what3words.com/cheeses.yard.applies"><strong>cheeses.yard.applies</strong></a> Wed, June 20th, 13:37
             <!-- #1 #chat #ttl lives inside the metadata -->
             <em>15 min. left</em>
         </h3>
-    </div>
+    
     <!-- #1 #chat #messages depict a short fictional chat-->
     <p>What's the place you folks call home?</p>
     <!-- #1 #chat #button subsequent to each message -->
     <button>+5 min.</button>
-
+</div>
     <!-- #1 #chat #metadata contains location, weekday, day, and time -->
-    <div style="width: 80%">
+    <div class="message">
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
             <a href="https://map.what3words.com/truck.cotton.zone" target="_blank"><strong>truck.cotton.zone</strong></a> Wed, June 20th, 13:39
@@ -154,7 +156,7 @@
         <button>+5 min.</button>
     </div>
     <!-- #1 #chat #metadata contains location, weekday, day, and time -->
-    <div style="width: 80%">
+    <div class="ownmessage">
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
             <a href="https://map.what3words.com/thus.best.dishes" target="_blank"><strong>thus.best.dishes</strong></a> Wed, June 20th, 14:02
@@ -167,7 +169,7 @@
         <button>+5 min.</button>
     </div>
     <!-- #1 #chat #metadata contains location, weekday, day, and time -->
-    <div style="width: 80%">
+    <div class="message">
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
             <a href="https://map.what3words.com/driveway.helper.magazine" target="_blank" ><strong>driveway.helper.magazine</strong></a> Wed, June 20th, 14:02
@@ -180,7 +182,7 @@
         <button>+5 min.</button>
     </div>
     <!-- #1 #chat #metadata contains location, weekday, day, and time -->
-    <div style="width: 80%">
+    <div class="message">
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
             <a href="https://map.what3words.com/escapes.pitch.saucepan" target="_blank"><strong>escapes.pitch.saucepan</strong></a> Wed, June 20th, 14:07
@@ -193,7 +195,7 @@
         <button>+5 min.</button>
     </div>
     <!-- #1 #chat #metadata contains location, weekday, day, and time  -->
-    <div style="width: 80%">
+    <div class="message">
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
             <a href="https://map.what3words.com/meanings.identity.pays" target="_blank"><strong>meanings.identity.pays</strong></a> Wed, June 20th, 04:08
